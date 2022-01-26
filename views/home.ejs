@@ -1,0 +1,50 @@
+<style>
+.topright {
+position: absolute;
+top: 8px;
+right: 20px;
+
+}
+.topright a{
+text-decoration: none;
+color : #ffffff;
+font-family : Comic Sans MS, Comic Sans, cursive	;
+}
+</style>
+
+<div class="foodie">
+    <div class="banner">
+      <div class="hero-text">
+          <h3 class="title">The Cook Book</h3>
+          <h4 class="description">Discover the best food & drink recipes</h4>
+      <br>
+      </div>
+      <div class="topright">
+      <h3><a href="/home">Home</a> &nbsp;&emsp;&nbsp;&emsp; <a href="/search">Search</a> &nbsp;&emsp;&nbsp;&emsp; <a href="/logout">Logout</a> <h3>
+      </div>
+    </div>
+
+<!--    <div class="container">
+        <div class="content-page">
+            <div class="row foodview" style="margin: auto;">
+            </div>
+
+            <div id="see-more"></div>
+
+        </div>
+-->
+    </div>
+
+
+
+
+
+<%- contentFor('title') %>
+Home
+
+<%- contentFor('script_src') %>
+<script src="home.js"></script>
+
+
+<%- contentFor('css_src') %>
+<link rel="stylesheet" href="home.css">

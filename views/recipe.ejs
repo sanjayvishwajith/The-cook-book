@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Recipe</title>
+	<link href="bootstrap.min.css" rel="stylesheet">
+	<link href="global.css" rel="stylesheet">
+	<link href="details.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+	<style>
+	  .topright {
+	position: absolute;
+	top: 8px;
+	right: 20px;
+
+	}
+	.topright a{
+	text-decoration: none;
+	color : #ffffff;
+	font-family : Comic Sans MS, Comic Sans, cursive	;
+	font-size:35px;
+	}
+	</style>
+
+
+
+</head>
+<body>
+	<section id="details_main">
+		<div class="details_inner clearfix">
+			<div class="container">
+				<div class="row">
+					<div class="details_main_1">
+						<h1><%= label %> Recipe</h1>
+					</div>
+				</div>
+				<div class="topright">
+			<h3><a href="/home">Home</a> &nbsp;&emsp;&nbsp;&emsp; <a href="/search">Search</a> &nbsp;&emsp;&nbsp;&emsp; <a href="/logout">Logout</a> <h3>
+			</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<section id="details">
+		<div class="container">
+			<div class="row">
+				<div class="details_1">
+					<h3>The Recipe Story</h3>
+					<div class=" content-top2">
+						<h4 class="text-center">O</h4>
+					</div>
+				</div>
+				<div class="details_2 clearfix">
+					<div class="col-sm-6">
+						<div class="details_3">
+							<h3>The Ingredient List</h3>
+						</div>
+						<div class="details_4">
+							<ul>
+								<%- ingredients %>
+							</ul>
+						</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="details_3">
+								<h3>The Easy Steps</h3>
+							</div>
+							<div class="details_5">
+								<a href="#"><img src="<%= image %>" alt="abc" class="img_responsive"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="details">
+			<div class="container">
+			<div class="row">
+			<div class="details_2 clearfix">
+			<div class="col-sm-6">
+					<div class="details_3">
+					<h3>Deit Lables</h3>
+					</div>
+					<div class="details_4">
+					<ul>
+						<%- dietLabels %>
+					</ul>
+					</div>
+					</div>
+					<div class="col-sm-6">
+					<div class="details_3">
+					<h3>The Cuisine Type</h3>
+					</div>
+					<div class="details_5">
+					<div class="details_4">
+					<ul>
+						<%- cuisineType %>
+					</ul>
+					</div>
+					</div>
+					</div>
+					</div>
+			</div>
+			</div>
+			</div>
+			</section>
+			<section id="details">
+			<div class="container">
+			<div class="row">
+			<div class="details_2 clearfix">
+			<div class="col-sm-6">
+					<div class="details_3">
+					<h3>Meal Type</h3>
+					</div>
+					<div class="details_4">
+					<ul>
+						<%- mealType %>
+					</ul>
+					</div>
+					</div>
+					<div class="col-sm-6">
+					<div class="details_3">
+					<h3>Dish Type</h3>
+					</div>
+					<div class="details_5">
+					<div class="details_4">
+					<ul>
+						<%- dishType %>
+					</ul>
+					</div>
+					</div>
+					</div>
+					</div>
+			</div>
+			</div>
+			</div>
+			</section>
+			<section id="details">
+			<div class="container">
+			<div class="row">
+			<div class="details_2 clearfix">
+			<div class="col-sm-6">
+					<div class="details_3">
+					<h3>Nutrients</h3>
+					</div>
+					<div class="details_4">
+						<h4> Calories </h4>
+						<br>
+						<%- totalNutrients_ENERC_KCAL %>
+						<br>
+						<br>
+
+						<h4> Fat </h4>
+						<br>
+						<%- totalNutrients_FAT %>
+
+					</div>
+					</div>
+			</div>
+			</div>
+		</div>
+	</section>
+
+
+	<script src="recipe.js"></script>
+</body>
+</html>

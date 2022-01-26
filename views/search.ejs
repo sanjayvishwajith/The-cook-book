@@ -1,0 +1,100 @@
+<style>
+  .topright {
+position: absolute;
+top: 8px;
+right: 20px;
+
+}
+.topright a{
+text-decoration: none;
+color : #ffffff;
+
+font-family : Comic Sans MS, Comic Sans, cursive	;
+}
+
+</style>
+<div class="foodie">
+    <div class="banner">
+          <div class="hero-text">
+              <h2 class="title">The Cook Book</h2>
+              <h4 class="description">Discover the best food & drink recipes</h4>
+          <br>
+          </div>
+          <div class="topright">
+          <h3><a href="/home">Home</a> &nbsp;&emsp;&nbsp;&emsp; <a href="/search">Search</a> &nbsp;&emsp;&nbsp;&emsp; <a href="/logout">Logout</a> <h3>
+          </div>
+        <div class="search-box">
+            <div class="row">
+                <div class="col">
+                    <div class="form-group select-box">
+                        <select class="form-control" id="cuisineType-select">
+
+                            <option value="All">All</option>
+                            <option value="American">American</option>
+                            <option value="Asian">Asian</option>
+                            <option value="British">British</option>
+                            <option value="Caribbean">Caribbean</option>
+                            <option value="Central Europe">Central Europe</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Eastern Europe">Eastern Europe</option>
+                            <option value="French">French</option>
+                            <option value="Indian">Indian</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Kosher">Kosher</option>
+                            <option value="Mediterranean">Mediterranean</option>
+                            <option value="Mexican">Mexican</option>
+                            <option value="Middle Eastern">Middle Eastern</option>
+                            <option value="Nordic">Nordic</option>
+                            <option value="South American">South American</option>
+                            <option value="South East Asian">South East Asian</option>
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="input-box">
+                        <input type="text" class="form-control" placeholder="Search for restaurant or food" id="search-bar">
+                    </div>
+                </div>
+                <button class="btn btn-outline-primary btn-box" id="search-btn" type="button"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-page">
+            <div class="row foodview" style="margin: auto;">
+            </div>
+
+
+            <div id="see-more"></div>
+
+        </div>
+        <hr>
+        <div class="footer">
+            <h4 style="text-align: left;">The Cook Book</h4>
+            <hr>
+            <p style="text-align: left;">By continuing past this page, you agree to our Terms of Service, Cookie
+                Policy,
+                Privacy Policy and Content Policies. All trademarks are properties of their respective owners.
+                2022© The Cook Book™ Ltd. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+<%- contentFor('title') %>
+Search
+
+
+<%- contentFor('css_src') %>
+<link rel="stylesheet" href="search.css">
+
+
+<%- contentFor('script_src') %>
+<script src="search.js"></script>

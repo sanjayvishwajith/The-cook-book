@@ -1,0 +1,84 @@
+<div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 foodlist">
+    <a class="card-link">
+        <div class="card">
+            <img class="card-img-top"
+                src="<%= image %>"
+                alt="Card image cap">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <h4 class="dish-name"><%= label %></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="info" >
+
+            <div class="d-none" id="index" ><%= index %></div>
+            <div class="d-none" id="url" ><%= url %></div>
+
+
+            <ul class="d-none" id="ingredients" >
+                <% ingredients.forEach(element => {  %>
+                   <li class="well_1"><i class="fa fa-leaf"></i> <%- element["food"] %></li>
+                   <li class="well_2"><%- element["quantity"]%> <%- element["measure"]%></li>
+                <% });  %>
+            </ul>
+
+
+
+
+
+            <ul class="d-none" id="dietLabels" >
+                <% dietLabels.forEach(element => { %>
+                   <li class="well_1"><i class="fa fa-leaf"></i> <%- element %></li>
+                <% });  %>
+            </ul>
+
+            <ul class="d-none" id="cuisineType" >
+                <% cuisineType.forEach(element => { %>
+                   <li class="well_1"><i class="fa fa-leaf"></i> <%- element %> </li>
+                <% });  %>
+            </ul>
+
+            <ul class="d-none" id="mealType" >
+                <% mealType.forEach(element => { %>
+                   <li class="well_1"><i class="fa fa-leaf"></i> <%- element %> </li>
+                <% });  %>
+            </ul>
+
+            <ul class="d-none" id="dishType" >
+                <% dishType.forEach(element => { %>
+                   <li class="well_1"><i class="fa fa-leaf"></i> <%- element %> </li>
+                <% });  %>
+            </ul>
+
+            
+
+
+            <div class="d-none" id="totalNutrients" >                
+                <div class="d-none" id="ENERC_KCAL" > 
+                    
+                    <ul>
+                        <li class="well_1" ><i class="fa fa-leaf"></i> <%- totalNutrients["ENERC_KCAL"]["label"] %></li>
+                        <li class="well_1" ><i class="fa fa-leaf"></i> <%- totalNutrients["ENERC_KCAL"]["quantity"] %></li>
+                        <li class="well_1" ><i class="fa fa-leaf"></i> <%- totalNutrients["ENERC_KCAL"]["unit"] %></li>
+                    </ul>
+
+                </div>
+                <div class="d-none" id="FAT" > 
+                    
+                    <ul>
+                        <li class="well_1" ><i class="fa fa-leaf"></i> <%- totalNutrients["FAT"]["label"] %></li>
+                        <li class="well_1" ><i class="fa fa-leaf"></i> <%- totalNutrients["FAT"]["quantity"] %></li>
+                        <li class="well_1" ><i class="fa fa-leaf"></i> <%- totalNutrients["FAT"]["unit"] %></li>
+                    </ul>
+
+                </div>
+            </div>
+
+        </div>
+
+    </a>
+</div>
