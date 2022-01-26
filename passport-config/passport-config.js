@@ -21,7 +21,6 @@ module.exports = (passport) => {
                 bcrypt.compare(password, data.password, (err, isMatch) => {
                     if (err) throw err;
 
-
                     if (isMatch == true)
                         return done(null, data);
                     else

@@ -6,12 +6,10 @@
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
-   },
-
+  },
   "engines": {
     "node": "16.13.2"
   },
-
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -29,8 +27,4 @@
   "devDependencies": {
     "nodemon": "^2.0.15"
   }
-
-
-
-
 }
