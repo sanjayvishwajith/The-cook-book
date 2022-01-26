@@ -2,10 +2,11 @@
   "name": "wt_food_app",
   "version": "1.0.0",
   "description": "A simple food app",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
-  },
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+   },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -23,4 +24,8 @@
   "devDependencies": {
     "nodemon": "^2.0.15"
   }
+
+
+
+
 }
